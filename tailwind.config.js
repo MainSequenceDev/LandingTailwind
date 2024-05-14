@@ -6,6 +6,9 @@ module.exports = {
     colors: {
       primary: "#8ab4f8",
     },
+    fontFamily: {
+      neue: ["PPNeueMontreal"],
+    },
   },
   plugins: [],
 };
