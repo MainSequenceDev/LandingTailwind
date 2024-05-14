@@ -23,69 +23,105 @@
 <body>
   <div class="canvas-paper">
 
-    <div class=" bg-offwhite fixed w-full top-0 pl-16  z-30 backdrop-blur">
-      <nav class="flex md:container mx-auto items-center px-5 py-3 lg:p-5 gap-5 lg:gap-5  ">
+    <div class=" bg-offwhite fixed w-full top-0 sm:px-16 px-8  z-30 backdrop-blur">
+      <nav
+        class="block md:flex sm:container mx-auto items-center justify-between md:justify-start py-3 lg:p-5 gap-5 lg:gap-5  ">
 
-        <div class="flex items-center">
-          <img src="/static/images/logo.svg" alt="MainSequenceLogo" class="w-40">
-        </div>
-        <div class="flex bg-white pl-16 mt-2 mb-2 md:m-0 hidden md:flex  justify-between">
-          <div class="flex flex-nowrap flex-grow font-body">
-            <a href="http://127.0.0.1:8006/#"
-              class="block lg:inline-block lg:mt-0 hover:text-primary mr-4 xl:mr-6 text-sm xl:text-base whitespace-nowrap font-medium">
-              Software
-            </a>
-            <a href="http://127.0.0.1:8006/#"
-              class="block lg:inline-block lg:mt-0 hover:text-primary mr-4 xl:mr-6 text-sm xl:text-base  whitespace-nowrap font-medium">
-              Research
-            </a>
-            <a href="http://127.0.0.1:8006/#"
-              class="block lg:inline-block lg:mt-0 hover:text-primary mr-4 xl:mr-6 text-sm xl:text-base  whitespace-nowrap font-medium">
-              Careers
-            </a>
-            <a href="http://127.0.0.1:8006/#"
-              class="block lg:inline-block lg:mt-0 hover:text-primary text-sm xl:text-base  whitespace-nowrap font-medium">
-              About us
-            </a>
+        <div class="flex justify-between">
+          <div class="flex items-center">
+            <img src="/static/images/logo.svg" alt="MainSequenceLogo" class="w-40">
           </div>
-        </div>
-
-
-        <div class="md:hidden flex items-center">
-          <div class="outline-none mobile-menu-button">
-            <svg id="Windframe_dLo7zo8gXo" fill="none" strokelinecap="round" strokewidth="2" viewBox="0 0 24 24"
-              stroke="currentColor" class="w-8 h-8 text-gray-500 hover:text-green-500">
-              <path id="Windframe_nXlOBVw7AH" d="M4 6h16M4 12h16M4 18h16"></path>
+          <button data-collapse-toggle="navbar-default" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
             </svg>
-          </div>
+          </button>
         </div>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-700 md:bg-transparent bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 ">
+            <li>
+              <a href="http://127.0.0.1:8006/#"
+                class="block lg:inline-block text-white py-2 md:text-[#000] md:py-0 lg:mt-0 hover:text-primary mr-4 xl:mr-6 text-sm xl:text-base whitespace-nowrap font-medium">
+                Software
+              </a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:8006/#"
+                class="block lg:inline-block text-white py-2 md:text-[#000] md:py-0 lg:mt-0 hover:text-primary mr-4 xl:mr-6 text-sm xl:text-base  whitespace-nowrap font-medium">
+                Research
+              </a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:8006/#"
+                class="block lg:inline-block text-white py-2 md:text-[#000] md:py-0 lg:mt-0 hover:text-primary mr-4 xl:mr-6 text-sm xl:text-base  whitespace-nowrap font-medium">
+                Careers
+              </a>
+            </li>
+            <li>
+              <a href="http://127.0.0.1:8006/#"
+                class="block lg:inline-block text-white py-2 md:text-[#000] md:py-0 lg:mt-0 hover:text-primary text-sm xl:text-base  whitespace-nowrap font-medium">
+                About us
+              </a>
+            </li>
+          </ul>
 
-        <div class="hidden md:hidden md:hidden mobile-menu">
-          <div>
-            <div class="flex flex-col">
-              <a href="http://127.0.0.1:8006/#" class="text-gray-600 text-center mt-6 font-medium text-lg">Software</a>
-              <a href="http://127.0.0.1:8006/#" class="text-gray-600 text-center mt-6 font-medium text-lg">Research</a>
-              <a href="http://127.0.0.1:8006/#" class="text-gray-600 text-center mt-6 font-medium text-lg">Careers</a>
-              <a href="http://127.0.0.1:8006/#" class="text-gray-600 text-center mt-6 font-medium text-lg">About us</a>
-              <button
-                class="h-12 w-28 text-gray-600 bg-white border-2 border-white flex items-center justify-center text-center rounded-lg text-lg font-normal mt-6 mr-auto ml-auto">
-                Sign in
-              </button>
-              <button
-                class="h-12 w-28 text-white bg-blue-700 hover:bg-blue-900 hover:border-blue-900 border-2 flex items-center justify-center text-center border-blue-700 rounded-lg text-lg font-normal mt-6 mr-auto ml-auto">
-                Sign up
-              </button>
-            </div>
-          </div>
         </div>
       </nav>
+      <!-- <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://flowbite.com/docs/images/logo.svg" class="h-8" alt="Flowbite Logo" />
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15" />
+            </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                  aria-current="page">Home</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav> -->
     </div>
     <!--begin::Root-->
 
     <!--        Introduction-->
-    <div class="bg-darkms pt-16 pr-16 pb-0 pl-16">
+    <div class="bg-darkms pt-16 sm:px-16 px-8">
       <div
-        class="bg-transparent pt-42 pr-4 pt-32 pb-16 pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:pb-16 xl:pb-16 md:px-8 max-w-screen-2xl">
+        class="bg-transparent sm:pt-42 sm:pr-4 sm:pt-32 sm:pb-16 sm:pl-4 pt-8 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:pb-16 xl:pb-16 md:px-8 max-w-screen-2xl">
         <div class="mr-auto ml-auto flex justify-end relative xl:pr-32">
           <div class="mb-16 lg:pr-12 lg:mb-0">
 
@@ -94,13 +130,13 @@
               <span class="text-primary text-2xl font-bold leading-loose sm:text-2xl sm:leading-none">
                 Main Sequence
               </span>
-              <span class="text-2xl  leading-loose sm:text-2xl sm:leading-none" style="line-height: 50px;"> we're
+              <span class="text-2xl sm:text-2xl sm:leading-[50px]"> we're
                 leading the charge in transforming financial workflows
                 within asset management. Through the strategic integration of machine learning and
                 artificial intelligence, we're pioneering solutions that push the boundaries of industry
                 norms, creating a new era of efficiency and innovation</span>
             </div>
-            <div class="flex flex-col lg:flex-row items-center lg:items-start mt-32 mb-32">
+            <div class="flex flex-col lg:flex-row items-center lg:items-start sm:my-32 my-16">
               <button
                 class="transition duration-200 hover:bg-white hover:text-black focus:shadow-outline focus:outline-none border border-white text-white inline-flex font-semibold tracking-wide text-medium h-12 shadow-md items-center justify-center pr-6 pl-6 mr-6 mb-4 lg:mb-0 lg:mr-0 rounded-full">
                 Learn More
@@ -116,12 +152,12 @@
     </div>
 
     <!--  Pillars block title -->
-    <div class="bg-white pt-16 pr-16 pb-0 pl-16">
+    <div class="bg-white sm:p-16 sm:pb-0 p-8 pb-0">
       <div
-        class="bg-transparent pt-0 pr-4 pb-16 pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 md:px-8 max-w-screen-2xl">
+        class="bg-transparent sm:px-4 sm:pb-16 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 md:px-8 max-w-screen-2xl">
         <div class="lg:mb-0  lg:pr-5 mb-6">
           <div>
-            <h2 class="block text-4xl font-bold tracking-wider text-gray-900 leading-6  sm:text-4xl">
+            <h2 class="block text-4xl font-bold tracking-wider text-gray-900  sm:text-4xl">
               Main Sequence</h2>
             <h2 class="inline text-4xl font-bold tracking-wider text-gray-900  sm:text-4xl sm:leading-none">
               Production Ready Apps &amp; AI Solutions</h2>
@@ -134,14 +170,14 @@
     </div>
 
     <!-- Pillars block content -->
-    <div class="bg-white pt-0 pr-16 pb-0 pl-16">
+    <div class="bg-white sm:pt-0 sm:p-16 p-8">
       <div
-        class="bg-transparent pt-0 pr-4 pb-16 pl-4 flex mr-auto ml-auto flex-col items-justify relative lg:flex-row lg:py-2 xl:py-2 md:px-8 max-w-screen-2xl">
+        class="bg-transparent flex mr-auto ml-auto flex-col items-justify relative lg:flex-row lg:py-2 xl:py-2 md:px-8 max-w-screen-2xl">
 
-        <div class="flex pt-8 pb-8 gap-4">
+        <div class="flex pt-8 gap-4 sm:flex-row flex-col">
           <!-- Left side (Bullets) -->
-          <div class="w-1/2">
-            <div class="py-6 px-0 ">
+          <div class="sm:w-1/2 w-full">
+            <div class="">
               <div class="flex items-center mb-4">
                 <div class="text-2xl font-bold p-2 mr-4">01.</div>
                 <div class="text-xl font-bold">PRODUCTION READY APPLICATIONS</div>
@@ -173,8 +209,8 @@
             </div>
           </div>
           <!-- Right side (Image) -->
-          <div class="w-1/2">
-            <div class="py-6 px-0 ">
+          <div class="sm:w-1/2 w-full">
+            <div class="">
               <div class="flex items-center mb-4">
                 <div class="text-2xl font-bold p-2 mr-4">02.</div>
                 <div class="text-xl font-bold">MACHINE LEARNING &amp;&nbsp;&nbsp;AI RESEARCH</div>
@@ -210,16 +246,18 @@
     <section class="horizontal">
       <div id="animation-wrap" class="animation-wrap to-right">
         <!--  block title -->
-        <div class="bg-darkms  pt-16 pr-16 pb-0 pl-16">
+        <div class="bg-darkms  sm:p-16 p-8">
           <div
-            class="bg-transparent pt-0 pr-4 pb-16 pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 md:px-8 max-w-screen-2xl">
-            <div class="lg:mb-0 lg:pr-5 mb-6">
+            class="bg-transparent pt-0 sm:pr-4 sm:pb-16 sm:pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 md:px-8 max-w-screen-2xl">
+            <div class="lg:mb-0 lg:pr-5">
               <div>
-                <h2 class="block text-3xl font-bold  tracking-wider  leading-6  sm:text-4xl">
-                  01. Production Ready Applications</h2>
+                <h2 class="block text-3xl font-bold  tracking-wider sm:text-4xl">
+                  01. Production Ready Applications
+                </h2>
 
-                <h3 class="mb-6 mt-6 text-xl text-left  ">A modular approach that brings a direct impact
-                  exactly where you need it the most.</h3>
+                <h3 class="mt-6 text-xl text-left">A modular approach that brings a direct impact
+                  exactly where you need it the most.
+                </h3>
               </div>
             </div>
           </div>
@@ -229,39 +267,42 @@
         <!-- navigation-->
         <div class="bg-transparent  pt-0 pr-4 pb-16 pl-4 ">
           <div class="mb-4 border-b border-gray-200">
-            <ul class="flex flex-wrap -mb-px text-lg text-center justify-center" id="default-styled-tab"
-              data-tabs-toggle="#default-styled-tab-content"
+            <ul class="flex flex-wrap -mb-px sm:text-lg text-base text-center sm:justify-center justify-start"
+              id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content"
               data-tabs-active-classes="dark:text-primary border-b dark:border-primary"
               data-tabs-inactive-classes="dark:border-transparent text-gray-500 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-blue-300"
               role="tablist">
               <li class="me-2" role="presentation">
-                <button class="inline-block p-4 rounded-t-lg" id="vam-styled-tab" data-tabs-target="#vam" type="button"
-                  role="tab" aria-controls="vam" aria-selected="false">Virtual Asset Manager (VAM-1)</button>
+                <button class="inline-block sm:p-4 px-2 py-4 rounded-t-lg" id="vam-styled-tab" data-tabs-target="#vam"
+                  type="button" role="tab" aria-controls="vam" aria-selected="false">Virtual Asset Manager
+                  (VAM-1)</button>
               </li>
               <li class="me-2" role="presentation">
-                <button class="inline-block p-4 rounded-t-lg" id="engine-styled-tab" data-tabs-target="#engine"
-                  type="button" role="tab" aria-controls="engine" aria-selected="false">Execution Engine</button>
+                <button class="inline-block sm:p-4 px-2 py-4 rounded-t-lg" id="engine-styled-tab"
+                  data-tabs-target="#engine" type="button" role="tab" aria-controls="engine"
+                  aria-selected="false">Execution Engine</button>
               </li>
               <li class="me-2" role="presentation">
-                <button class="inline-block p-4 rounded-t-lg" id="tdag-styled-tab" data-tabs-target="#tdag"
+                <button class="inline-block sm:p-4 px-2 py-4 rounded-t-lg" id="tdag-styled-tab" data-tabs-target="#tdag"
                   type="button" role="tab" aria-controls="tdag" aria-selected="false">TDAG</button>
               </li>
               <li role="presentation">
-                <button class="inline-block p-4 rounded-t-lg" id="jarvis-styled-tab" data-tabs-target="#jarvis"
-                  type="button" role="tab" aria-controls="jarvis" aria-selected="false">Jarvis</button>
+                <button class="inline-block sm:p-4 px-2 py-4 rounded-t-lg" id="jarvis-styled-tab"
+                  data-tabs-target="#jarvis" type="button" role="tab" aria-controls="jarvis"
+                  aria-selected="false">Jarvis</button>
               </li>
             </ul>
           </div>
           <!--             content-->
 
           <div
-            class="bg-transparent pt-0 pr-4 pb-16 pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 md:px-8 max-w-screen-2xl"
+            class="bg-transparent pt-0 pr-4 pb-16 pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 sm:px-8 max-w-screen-2xl"
             id="vam">
 
-            <div class="flex pt-8">
+            <div class="flex pt-8 sm:flex-row flex-col">
               <!-- Left side (Bullets) -->
-              <div class="w-1/2">
-                <div class="py-6 px-6 text-lg">
+              <div class="sm:w-1/2 w-full sm:mb-0 mb-8">
+                <div class="sm:p-6 sm:mb-0 px-0 py-2 mb-6 text-lg">
                   <ul class="list-none list-inside flex flex-col justify-between h-half text-base">
                     <li class="font-normal mb-12 flex items-center">
                       <i class="fas fa-chevron-right mr-4"></i>
@@ -273,7 +314,7 @@
                       <i class="fas fa-chevron-right mr-4"></i>
                       This is the second advantage
                     </li>
-                    <li class=" font-normal mb-12 flex items-center">
+                    <li class=" font-normal flex items-center">
                       <i class="fas fa-chevron-right mr-4"></i>
                       This is the third advantage
                     </li>
@@ -286,7 +327,7 @@
                 </div>
               </div>
               <!-- Right side (Image) -->
-              <div class="w-1/2">
+              <div class="sm:w-1/2 w-full">
                 <div class="p-8 bg-black bg-opacity-[0.04]">
                   <img class="object-fill" src="/static/images/virtual-asset.jpg" alt="">
                 </div>
@@ -297,13 +338,13 @@
           <!--             content-->
 
           <div
-            class="bg-transparent pt-0 pr-4 pb-16 pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 md:px-8 max-w-screen-2xl"
+            class="bg-transparent pt-0 pr-4 pb-16 pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 sm:px-8 max-w-screen-2xl"
             id="engine">
 
-            <div class="flex pt-8 flex-1">
+            <div class="flex pt-8 flex-1 sm:flex-row flex-col">
               <!-- Left side (Bullets) -->
-              <div class="w-1/2">
-                <div class="py-6 px-6 text-lg">
+              <div class="sm:w-1/2 w-full sm:mb-0 mb-8">
+                <div class="sm:p-6 sm:mb-0 px-0 py-2 mb-6 text-lg">
                   <ul class="list-none list-inside flex flex-col justify-between h-half text-base">
                     <li class="font-normal mb-12 flex items-center">
                       <i class="fas fa-chevron-right mr-4"></i>
@@ -326,7 +367,7 @@
                 </div>
               </div>
               <!-- Right side (Image) -->
-              <div class="w-1/2">
+              <div class="sm:w-1/2 w-full">
                 <div class="p-8 bg-black bg-opacity-[0.04]">
                   <img class="object-fill" src="/static/images/virtual-asset.jpg" alt="">
                 </div>
@@ -335,13 +376,13 @@
 
           </div>
           <div
-            class="bg-transparent pt-0 pr-4 pb-16 pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 md:px-8 max-w-screen-2xl"
+            class="bg-transparent pt-0 pr-4 pb-16 pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 sm:px-8 max-w-screen-2xl"
             id="tdag">
 
-            <div class="flex pt-8">
+            <div class="flex pt-8 sm:flex-row flex-col">
               <!-- Left side (Bullets) -->
-              <div class="w-1/2">
-                <div class="py-6 px-6 text-lg">
+              <div class="sm:w-1/2 w-full sm:mb-0 mb-8">
+                <div class="sm:p-6 sm:mb-0 px-0 py-2 mb-6 text-lg">
                   <ul class="list-none list-inside flex flex-col justify-between h-half text-base">
                     <li class="font-normal mb-12 flex items-center">
                       <i class="fas fa-chevron-right mr-4"></i>
@@ -366,7 +407,7 @@
                 </div>
               </div>
               <!-- Right side (Image) -->
-              <div class="w-1/2">
+              <div class="sm:w-1/2 w-full">
                 <div class="p-8 bg-black bg-opacity-[0.04]">
                   <img class="object-fill" src="/static/images/virtual-asset.jpg" alt="">
                 </div>
@@ -375,13 +416,13 @@
 
           </div>
           <div
-            class="bg-transparent pt-0 pr-4 pb-16 pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 md:px-8 max-w-screen-2xl"
+            class="bg-transparent pt-0 pr-4 pb-16 pl-4 flex mr-auto ml-auto flex-col items-center relative lg:flex-row lg:py-2 xl:py-2 sm:px-8 max-w-screen-2xl"
             id="jarvis">
 
-            <div class="flex pt-8">
+            <div class="flex pt-8 sm:flex-row flex-col">
               <!-- Left side (Bullets) -->
-              <div class="w-1/2">
-                <div class="py-6 px-6 text-lg">
+              <div class="sm:w-1/2 w-full sm:mb-0 mb-8">
+                <div class="sm:p-6 sm:mb-0 px-0 py-2 mb-6 text-lg">
                   <ul class="list-none list-inside flex flex-col justify-between h-half text-base">
                     <li class="font-normal mb-12 flex items-center">
                       <i class="fas fa-chevron-right mr-4"></i>
@@ -433,28 +474,28 @@
           </div>
         </div>
         <div class="mt-0 mr-0 mb-10 ml-0 grid gap-8 row-gap-8 lg:grid-cols-3 text-2xl">
-          <div class="sm:text-center ">
-            <p class="text-blue-600 mt-0 mr-auto mb-4 ml-auto flex w-16 h-16 bg-blue-50 items-center justify-center
-                  rounded-full sm:w-24 sm:h-24">
+          <div class="sm:text-center sm:block sm:mb-0 mb-4 flex flex-col items-center gap-6">
+            <span
+              class="text-blue-600 mt-0 sm:mx-auto sm:mb-4 flex w-16 h-16 bg-blue-50 items-center justify-center rounded-full sm:w-24 sm:h-24">
               <img class="w-7" src="/static/images/rocket.svg" alt="rocket" />
-            </p>
-            <p class="leading-5 font-bold mb-2 mt-24">CONTACT US</p>
+            </span>
+            <p class="leading-5 font-bold mb-2 sm:mt-24">CONTACT US</p>
 
 
           </div>
-          <div class="sm:text-center">
-            <p class="text-blue-600 mt-0 mr-auto mb-4 ml-auto flex w-16 h-16 bg-blue-50 items-center justify-center
-                  rounded-full sm:w-24 sm:h-24">
+          <div class="sm:text-center sm:block sm:mb-0 mb-4 flex flex-col items-center gap-6">
+            <span
+              class="text-blue-600 mt-0 sm:mx-auto sm:mb-4 flex w-16 h-16 bg-blue-50 items-center justify-center rounded-full sm:w-24 sm:h-24">
               <img class="w-7" src="/static/images/rocket.svg" alt="rocket" />
-            </p>
-            <p class="leading-5 font-bold mb-2 mt-24">CONTACT US</p>
+            </span>
+            <p class="leading-5 font-bold mb-2 sm:mt-24">CONTACT US</p>
           </div>
-          <div class="sm:text-center">
-            <p
-              class="text-blue-600 mt-0 mr-auto mb-4 ml-auto flex w-16 h-16 bg-blue-50 items-center justify-center rounded-full sm:w-24 sm:h-24">
+          <div class="sm:text-center sm:block sm:mb-0 mb-4 flex flex-col items-center gap-6">
+            <span
+              class="text-blue-600 mt-0 sm:mx-auto sm:mb-4 flex w-16 h-16 bg-blue-50 items-center justify-center rounded-full sm:w-24 sm:h-24">
               <img class="w-7" src="/static/images/rocket.svg" alt="rocket" />
-            </p>
-            <p class="leading-5 font-bold mb-2 mt-24">CONTACT US</p>
+            </span>
+            <p class="leading-5 font-bold mb-2 sm:mt-24">CONTACT US</p>
           </div>
         </div>
       </div>
