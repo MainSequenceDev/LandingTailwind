@@ -1,0 +1,63 @@
+
+
+@layer utilities {
+  .bg-calm {
+    background-color: #F7F7F7;
+      color: #181818; /* Add the font color */
+     font-family: "Manrope", Helvetica;
+  }
+
+          .bg-calm .border-b{
+       color: #181818;
+}
+
+   .bg-darkms {
+    background-color: #181818;
+      color: #FAFAFC; /* Add the font color */
+      font-family: "Manrope", Helvetica;
+  }
+
+    .bg-darkms h3 {
+    color: #c5bebe; /* Set the color for h3 elements */
+
+  }
+    .bg-darkms .border-b{
+       color: #FAFAFC;
+         font-family: "Manrope", Helvetica;
+}
+
+   .bg-offwhite {
+    background-color: #FAFAFC;
+      color: #181818; /* Add the font color */
+    font-family: "Manrope", Helvetica;
+  }
+
+      .bg-offwhite .border-b{
+       color: #181818;
+           font-family: "Manrope", Helvetica;
+}
+
+
+   .bg-bluegrad {
+    background: linear-gradient(180deg, rgb(173, 220, 238) 0%, rgb(138, 180, 248) 100%);
+      color: #FAFAFC; /* Add the font color */
+      font-family: "Manrope", Helvetica;
+  }
+
+   /* Font family for H1 and H2 */
+   .font-neue-montreal-medium {
+    font-family: 'Neue Montreal Medium', Helvetica;
+  }
+
+    /* Font family for H3 to H6 */
+   .font-manrope-medium {
+    font-family: 'Manrope Medium', Helvetica;
+  }
+  h2 {
+     font-family: 'Neue Montreal Medium', Helvetica;
+  }
+  h3{
+
+  }
+}
+
