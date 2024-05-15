@@ -1,62 +1,70 @@
-.bg-calm {
-  background-color: #f7f7f7;
-  color: #181818; /* Add the font color */
-  font-family: "PPNeueMontreal", Helvetica;
+@font-face {
+  font-family: "PPNeueMontreal";
+  src: url("../fonts/PP Neue Montreal - Free for Personal Use v2.6/OTF/PPNeueMontreal-Medium.otf")
+    format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
-.bg-calm .border-b {
-  color: #181818;
-}
+@layer utilities {
+  .bg-calm {
+    background-color: #f7f7f7;
+    color: #181818; /* Add the font color */
+    font-family: "Manrope", Helvetica;
+  }
 
-.bg-darkms {
-  background-color: #181818;
-  color: #fafafc; /* Add the font color */
-  font-family: "PPNeueMontreal", Helvetica;
-}
+  .bg-calm .border-b {
+    color: #181818;
+  }
 
-.bg-darkms h3 {
-  color: #c5bebe; /* Set the color for h3 elements */
-}
-.bg-darkms .border-b {
-  color: #fafafc;
-  font-family: "PPNeueMontreal", Helvetica;
-}
+  .bg-darkms {
+    background-color: #181818;
+    color: #fafafc; /* Add the font color */
+    font-family: "Manrope", Helvetica;
+  }
 
-.bg-offwhite {
-  background-color: #fafafc;
-  color: #181818; /* Add the font color */
-  font-family: "PPNeueMontreal", Helvetica;
-}
+  .bg-darkms h3 {
+    color: #c5bebe; /* Set the color for h3 elements */
+  }
+  .bg-darkms .border-b {
+    color: #fafafc;
+    font-family: "Manrope", Helvetica;
+  }
 
-.bg-offwhite .border-b {
-  color: #181818;
-  font-family: "PPNeueMontreal", Helvetica;
-}
+  .bg-offwhite {
+    background-color: #fafafc;
+    color: #181818; /* Add the font color */
+    font-family: "Manrope", Helvetica;
+  }
 
-.bg-bluegrad {
-  background: linear-gradient(
-    180deg,
-    rgb(173, 220, 238) 0%,
-    rgb(138, 180, 248) 100%
-  );
-  color: #fafafc; /* Add the font color */
-  font-family: "PPNeueMontreal", Helvetica;
-}
+  .bg-offwhite .border-b {
+    color: #181818;
+    font-family: "Manrope", Helvetica;
+  }
 
-/* Font family for H1 and H2 */
-.font-neue-montreal-medium {
-  font-family: "Neue Montreal Medium", Helvetica;
-}
+  .bg-bluegrad {
+    background: linear-gradient(
+      180deg,
+      rgb(173, 220, 238) 0%,
+      rgb(138, 180, 248) 100%
+    );
+    color: #fafafc; /* Add the font color */
+    font-family: "Manrope", Helvetica;
+  }
 
-/* Font family for H3 to H6 */
-.font-manrope-medium {
-  font-family: "Manrope Medium", Helvetica;
-}
-.font-neue {
-  font-family: "PPNeueMontreal", Helvetica;
-}
-h2 {
-  font-family: "PPNeueMontreal", Helvetica;
-}
-h3 {
+  /* Font family for H1 and H2 */
+  .font-neue-montreal-medium {
+    font-family: "PPNeueMontreal", Helvetica;
+  }
+
+  /* Font family for H3 to H6 */
+  .font-manrope-medium {
+    font-family: "Manrope Medium", Helvetica;
+  }
+  h1,
+  h2 {
+    font-family: "PPNeueMontreal", Helvetica;
+    font-weight: 500;
+  }
 }
