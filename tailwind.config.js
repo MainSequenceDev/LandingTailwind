@@ -1,13 +1,8 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+export default {
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {},
-    colors: {
-      primary: "#8ab4f8",
-    },
-    fontFamily: {
-      neue: ["PPNeueMontreal"],
-    },
   },
   plugins: [],
 };
